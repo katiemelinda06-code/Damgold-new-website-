@@ -1,1 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Damgold Foods & Agro</title>
 
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+    }
+
+    header{
+      background:linear-gradient(135deg,#013d1f,#0b7d35);
+      color:white;
+      padding:20px 8%;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:2rem;
+      font-weight:bold;
+      color:#ffd700;
+    }
+
+    .logo span{
+      display:block;
+      color:white;
+      font-size:1rem;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .hero{
+      background:
+      linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      color:white;
+      text-align:center;
+      padding:100px 8%;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      color:#ffd700;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      line-height:1.8;
+      max-width:800px;
+      margin:auto;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:15px 35px;
+      background:#ffd700;
+      color:#013d1f;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:50px;
+    }
+
+    .section{
+      padding:70px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:2.5rem;
+      color:#013d1f;
+      margin-bottom:50px;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#013d1f;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#0b7d35;
+      font-weight:bold;
+      margin-top:10px;
+    }
+
+    .order-section{
+      background:#013d1f;
+      color:white;
+      padding:80px 8%;
+    }
+
+    .order-box{
+      max-width:700px;
+      margin:auto;
+      background:white;
+      color:#222;
+      padding:40px;
+      border-radius:20px;
+    }
+
+    input,
+    textarea,
+    select{
+      width:100%;
+      padding:15px;
+      margin-top:15px;
+      border:none;
+      background:#f1f1f1;
+      border-radius:10px;
+      font-size:1rem;
+    }
+
+    button{
+      width:100%;
+      padding:15px;
+      margin-top:20px;
+      background:#013d1f;
+      color:white;
+      border:none;
+      border-radius:10px;
+      font-size:1rem;
+      cursor:pointer;
+    }
+
+    footer{
+      background:#001f0f;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <nav>
+
+    <div class="logo">
+      Damgold
+      <span>Foods & Agro</span>
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <h1>DAMGOLD FOODS & AGRO</h1>
+
+  <p>
+    Affordable Prices, Quality Products and Sweet Discounts Waiting For You.
+    Order your food items online and get them delivered nationwide.
+  </p>
+
+  <a href="#order" class="btn">Place Order</a>
+
+</section>
+
+<section class="section" id="products">
+
+  <h2 class="section-title">Our Products</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+        <h3>Palm Oil</h3>
+        <p>Fresh and healthy palm oil.</p>
+        <div class="price">From ₦1,615</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603052875302-d376b7c0638a?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+        <h3>Vegetable Oil</h3>
+        <p>Premium vegetable oil for cooking.</p>
+        <div class="price">From ₦1,900</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+        <h3>Original Honey</h3>
+        <p>100% natural and pure honey.</p>
+        <div class="price">From ₦3,100</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+        <h3>Kulikuli</h3>
+        <p>Crunchy and delicious snacks.</p>
+        <div class="price">From ₦760</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="order-section" id="order">
+
+  <h2 class="section-title" style="color:white;">
+    Place Your Order
+  </h2>
+
+  <div class="order-box">
+
+    <!-- EMAIL ORDER FORM -->
+
+    <form action="mailto:ayodeledamgold@gmail.com" method="POST" enctype="text/plain">
+
+      <input type="text" name="Customer Name" placeholder="Your Full Name" required>
+
+      <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+
+      <input type="email" name="Email" placeholder="Your Email" required>
+
+      <input type="text" name="Delivery Address" placeholder="Delivery Address" required>
+
+      <select name="Product">
+
+        <option>Select Product</option>
+
+        <option>Palm Oil</option>
+
+        <option>Vegetable Oil</option>
+
+        <option>Original Honey</option>
+
+        <option>Kulikuli</option>
+
+      </select>
+
+      <input type="number" name="Quantity" placeholder="Quantity">
+
+      <textarea
+        name="Additional Details"
+        rows="5"
+        placeholder="Additional Order Details">
+      </textarea>
+
+      <button type="submit">
+        Submit Order
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 Damgold Foods & Agro
+  </p>
+
+  <p>
+    Website: www.damgoldfoods.com
+  </p>
+
+  <p>
+    Email: ayodeledamgold@gmail.com
+  </p>
+
+</footer>
+
+</body>
+</html>
